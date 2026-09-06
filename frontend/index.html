@@ -1,0 +1,419 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hostel Complaint Management System</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+     <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            Hostel Complaint System
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#complaint">Submit Complaint</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#status">Complaint Status</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="bg-light py-5">
+    <div class="container text-center">
+
+        <h1 class="fw-bold text-primary">
+            Hostel Complaint Management System
+        </h1>
+
+        <p class="lead">
+            Easily submit and track your hostel complaints online.
+        </p>
+
+        <a href="#complaint" class="btn btn-primary">
+            Submit a Complaint
+        </a>
+
+    </div>
+</section>
+
+
+<!-- ================= DASHBOARD ================= -->
+
+<section class="py-4">
+    <div class="container">
+
+        <h2 class="text-center mb-4">Dashboard</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <div class="card text-center shadow">
+                    <div class="card-body">
+                        <h5>Total Complaints</h5>
+                        <h2 class="text-primary">25</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center shadow">
+                    <div class="card-body">
+                        <h5>Pending</h5>
+                        <h2 class="text-warning">10</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center shadow">
+                    <div class="card-body">
+                        <h5>In Progress</h5>
+                        <h2 class="text-info">5</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card text-center shadow">
+                    <div class="card-body">
+                        <h5>Resolved</h5>
+                        <h2 class="text-success">10</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= COMPLAINT FORM ================= -->
+
+<section id="complaint" class="bg-light py-5">
+
+    <div class="container">
+
+        <h2 class="text-center mb-4">
+            Submit Your Complaint
+        </h2>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-7">
+
+                <div class="card shadow">
+
+                    <div class="card-body">
+
+                        <form>
+
+                            <!-- Student Name -->
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    Student Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Enter your name"
+                                    required>
+                            </div>
+
+
+                            <!-- Roll Number -->
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    Roll Number
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Enter roll number"
+                                    required>
+                            </div>
+
+
+                            <!-- Room Number -->
+                            <div class="mb-3">
+                                <label class="form-label">
+                                    Room Number
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Enter room number"
+                                    required>
+                            </div>
+
+
+                            <!-- Complaint Category -->
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Complaint Category
+                                </label>
+
+                                <select class="form-select" required>
+
+                                    <option value="">
+                                        Select Category
+                                    </option>
+
+                                    <option>Electricity</option>
+                                    <option>Water Supply</option>
+                                    <option>Food</option>
+                                    <option>Cleanliness</option>
+                                    <option>Internet/Wi-Fi</option>
+                                    <option>Maintenance</option>
+                                    <option>Other</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Complaint Title -->
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Complaint Title
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Enter complaint title"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Complaint Description -->
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Complaint Description
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    rows="5"
+                                    placeholder="Describe your complaint"
+                                    required>
+                                </textarea>
+
+                            </div>
+
+
+                            <!-- Priority -->
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Priority
+                                </label>
+
+                                <select class="form-select">
+
+                                    <option>Low</option>
+                                    <option selected>Medium</option>
+                                    <option>High</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Submit -->
+                            <div class="text-center">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary px-5">
+
+                                    Submit Complaint
+
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= COMPLAINT STATUS ================= -->
+
+<section id="status" class="py-5">
+
+    <div class="container">
+
+        <h2 class="text-center mb-4">
+            Complaint Status
+        </h2>
+
+        <div class="table-responsive">
+
+            <table class="table table-bordered table-hover">
+
+                <thead class="table-primary">
+
+                    <tr>
+                        <th>Complaint ID</th>
+                        <th>Student Name</th>
+                        <th>Category</th>
+                        <th>Complaint</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>C001</td>
+                        <td>Rahul</td>
+                        <td>Electricity</td>
+                        <td>Fan is not working</td>
+                        <td>05-09-2026</td>
+                        <td>
+                            <span class="badge bg-warning">
+                                Pending
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>C002</td>
+                        <td>Priya</td>
+                        <td>Water Supply</td>
+                        <td>No water in bathroom</td>
+                        <td>04-09-2026</td>
+                        <td>
+                            <span class="badge bg-info">
+                                In Progress
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>C003</td>
+                        <td>Amit</td>
+                        <td>Internet</td>
+                        <td>Wi-Fi not working</td>
+                        <td>03-09-2026</td>
+                        <td>
+                            <span class="badge bg-success">
+                                Resolved
+                            </span>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="bg-light py-5">
+
+    <div class="container text-center">
+
+        <h2>Contact Hostel Administration</h2>
+
+        <p class="mt-3">
+            Email: hosteladmin@example.com
+        </p>
+
+        <p>
+            Phone: +91 9876543210
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-primary text-white text-center py-3">
+
+    <p class="mb-0">
+        © 2026 Hostel Complaint Management System
+    </p>
+
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>
+```
+

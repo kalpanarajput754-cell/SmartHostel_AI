@@ -1,0 +1,296 @@
+```css
+/* =========================
+   GENERAL STYLING
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.navbar .nav-link {
+    margin-left: 15px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   HOME SECTION
+========================= */
+
+#home {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+#home .btn {
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#home .btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+section h2 {
+    font-weight: bold;
+    color: #0d6efd;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   DASHBOARD CARDS
+========================= */
+
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card h5 {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    margin-bottom: 0;
+    font-size: 35px;
+}
+
+
+/* =========================
+   COMPLAINT FORM
+========================= */
+
+#complaint {
+    background-color: #f1f5f9 !important;
+}
+
+#complaint .card {
+    border-radius: 12px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: 10px 12px;
+    transition: 0.3s;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+}
+
+textarea {
+    resize: vertical;
+}
+
+form .btn {
+    padding: 11px 30px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+form .btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   COMPLAINT STATUS TABLE
+========================= */
+
+#status {
+    background-color: #ffffff;
+}
+
+.table {
+    background-color: white;
+    vertical-align: middle;
+}
+
+.table thead th {
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+}
+
+.table tbody td {
+    padding: 13px;
+    text-align: center;
+}
+
+.table tbody tr {
+    transition: 0.2s;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+.badge {
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+#contact {
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 15px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    .navbar .nav-link {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    #home {
+        min-height: 350px;
+        padding: 30px 15px;
+    }
+
+    #home h1 {
+        font-size: 27px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .table {
+        font-size: 12px;
+    }
+}
+```
+
